@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Activity 5 - Simple Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topbar">
+        <a href="../index.html" class="back">← Back to Portfolio</a>
+    </div>
+
+    <div class="header">
+        <h1>Student Personal Website</h1>
+        <p>Welcome to my Website</p>
+    </div>
+
+    <nav class="nav">
+        <a href="#home">Home</a> |
+        <a href="#register">Registration Form</a> |
+        <a href="#grade">Grade Table</a> |
+        <a href="#my">My Profile</a>
+    </nav>
+
+    <div class="main">
+
+        <section class="sec" id="home">
+            <h2>Welcome!</h2>
+            <p>This website contains my laboratory activities in Web Development.</p>
+            <p>Use the navigation menu above to visit the other pages.</p>
+        </section>
+
+        <aside class="asi">
+            <h3>Announcements</h3>
+            <p>Laboratory Activity 2</p>
+            <p>Submission Date: July 30, 2026</p>
+        </aside>
+
+    </div>
+
+    <!-- REGISTER -->
+    <section id="register" class="form-block">
+        <h2>Registration Form</h2>
+        <form>
+            <label>First Name:</label>
+            <input type="text" placeholder="Enter first name">
+
+            <label>Last Name:</label>
+            <input type="text" placeholder="Enter last name">
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter email">
+
+            <label>Password:</label>
+            <input type="password" placeholder="Enter password">
+
+            <label>Gender:</label>
+            <div class="radio-row">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
+            </div>
+
+            <label>Course:</label>
+            <select>
+                <option>BSIT</option>
+                <option>BSCS</option>
+                <option>BSHM</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- GRADE -->
+    <section id="grade" class="form-block">
+        <h2>Grade Table</h2>
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Grade</th>
+                <th>Remarks</th>
+            </tr>
+            <tr>
+                <td>Web Development</td>
+                <td>1.50</td>
+                <td class="passed">Passed</td>
+            </tr>
+            <tr>
+                <td>Database</td>
+                <td>1.75</td>
+                <td class="passed">Passed</td>
+            </tr>
+            <tr>
+                <td>Networking</td>
+                <td>2.00</td>
+                <td class="passed">Passed</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="my" class="form-block">
+        <h2>My Profile</h2>
+        <p><b>Name:</b> Mark Joseph Urbano</p>
+        <p><b>Course:</b> BSIT</p>
+        <p><b>Year:</b> 3rd Year College</p>
+    </section>
+
+    <footer class="foot">
+        <p>Copyright &copy; 2026 · Laboratory Activity 5</p>
+    </footer>
+
+</body>
+</html>
